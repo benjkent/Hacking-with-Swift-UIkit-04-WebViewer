@@ -24,6 +24,7 @@
 		747ABB2C26192A400013F4E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		747ABB2F26192A400013F4E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		747ABB3126192A410013F4E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		747ABB3826192AF80013F4E5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +41,7 @@
 		747ABB1726192A400013F4E5 = {
 			isa = PBXGroup;
 			children = (
+				747ABB3826192AF80013F4E5 /* README.md */,
 				747ABB2226192A400013F4E5 /* WebEasyViewer */,
 				747ABB2126192A400013F4E5 /* Products */,
 			);
