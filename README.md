@@ -4,8 +4,14 @@
 * Version xcode: 12.4 (12D4e) Iphone and Ipad
 * UIkit with Storyboards
 ## Purpose
-* enter 
+* View a specific (Https:// <address>) from within an IOS application
+* Use navigaion bar button to open a popover for user to select options
+* Supply multiple URL Addresses that can be navigated to from within the application
+
 ## Coding overview
+* Create a web viewer within code.
+* Create a button in the navbar
+* Create a popover alert box 
 * 
 ## Credit
 * Hackingwithswift https://www.hackingwithswift.com/read/4/1/settinng-up
