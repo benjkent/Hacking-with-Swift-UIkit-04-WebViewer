@@ -14,7 +14,7 @@
 1. Apple's web widget: WKWebView
 2. UIToolbar: a toolbar component that holds UIBarButtonItems
 3. UIProgressView: A way to visualize progress of tasks
-4. Delegation
+4. Delegation: a programming pattern
 5. Key-Value observing
 6. Creating a view in code.
 
