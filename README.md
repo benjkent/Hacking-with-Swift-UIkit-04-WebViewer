@@ -12,7 +12,7 @@
 * Create a web viewer within code.
 * Create a button in the navbar
 * Create a popover alert box 
-* 
+* Add padding to top of WebView to allow for viewing top of web page
 ## Credit
 * Hackingwithswift https://www.hackingwithswift.com/read/4/1/settinng-up
 
@@ -22,7 +22,8 @@
 3. UIProgressView: A way to visualize progress of tasks
 4. Delegation: a programming pattern
 5. Key-Value observing
-6. Creating a view in code.
+6. Creating a webview in code.
+7. Work with "loadview" and "didFinish"- for webview
 
 ## Project Challenges
 *

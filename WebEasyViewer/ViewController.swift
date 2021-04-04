@@ -27,6 +27,8 @@ class ViewController: UIViewController, WKNavigationDelegate {
         webView.load(URLRequest(url: url))
         webView.allowsBackForwardNavigationGestures = true
     }
+    
+    
     @objc func openTapped() {
         let ac = UIAlertController(title: "Open page...", message: nil, preferredStyle: .actionSheet)
         ac.addAction(UIAlertAction(title: "apple.com", style: .default, handler: openPage))
@@ -41,6 +43,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
     }
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         title = webView.title
+        self.webView.scrollView.contentInset = UIEdgeInsets(top: 50, left: 0, bottom: 0, right: 0)
     }
 }
 
