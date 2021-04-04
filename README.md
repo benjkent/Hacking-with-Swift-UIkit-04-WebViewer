@@ -1,6 +1,7 @@
 #  Easy Web Viewer
 ### Project Platform Details: 
-* Version 12.4 (12D4e) Iphone and Ipad
+* IOS 14.4
+* Version xcode: 12.4 (12D4e) Iphone and Ipad
 * UIkit with Storyboards
 ## Purpose
 * enter 
