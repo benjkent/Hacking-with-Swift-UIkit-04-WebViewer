@@ -35,7 +35,7 @@
 | ViewController | ViewController | ViewController |
 | :---------------: | :---------------:  | :---------------: |
 | intial screen     |  open tapped   |          |
-| <img src="https://github.com/benjkent/Hacking-with-Swift-UIkit-04-WebViewer/blob/main/screenshots/initalView.png">  | <img src="" >  |  <img src=" "> |
+| <img src="https://github.com/benjkent/Hacking-with-Swift-UIkit-04-WebViewer/blob/main/screenshots/initalView.png">  | <img src="https://github.com/benjkent/Hacking-with-Swift-UIkit-04-WebViewer/blob/main/screenshots/openPage.png" >  |  <img src=" "> |
 
 
 
