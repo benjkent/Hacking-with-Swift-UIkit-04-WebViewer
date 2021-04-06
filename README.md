@@ -34,8 +34,8 @@
 ## Solution preview
 | ViewController | ViewController | ViewController |
 | :---------------: | :---------------:  | :---------------: |
-| intial screen     |  open tapped   |          |
-| <img src="https://github.com/benjkent/Hacking-with-Swift-UIkit-04-WebViewer/blob/main/screenshots/initalView.png">  | <img src="https://github.com/benjkent/Hacking-with-Swift-UIkit-04-WebViewer/blob/main/screenshots/openPage.png" >  |  <img src=" "> |
+| intial screen     |  open tapped   | new page opened       |
+| <img src="https://github.com/benjkent/Hacking-with-Swift-UIkit-04-WebViewer/blob/main/screenshots/initalView.png">  | <img src="https://github.com/benjkent/Hacking-with-Swift-UIkit-04-WebViewer/blob/main/screenshots/openPage.png" >  |  <img src="https://github.com/benjkent/Hacking-with-Swift-UIkit-04-WebViewer/blob/main/screenshots/newSite.png"> |
 
 
 
