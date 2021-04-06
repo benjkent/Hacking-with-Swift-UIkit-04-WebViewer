@@ -26,11 +26,17 @@
 7. Work with "loadview" and "didFinish"- for webview
 
 ## Project Challenges
-*
+* Add an alert that tells users if the url is not allowed.
+* Add two tool bar items "back" and "forward".
+* Change inital viewController so it displays a list of available sites for the user to choose from.
+* Load the list of sites from a file. 
 
 ## Solution preview
 | ViewController | ViewController | ViewController |
 | :---------------: | :---------------:  | :---------------: |
+| intial screen     |  open tapped   |          |
+| <img src=" ">  | <img src="" >  |  <img src=" "> |
+
 
 
 
