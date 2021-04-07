@@ -71,11 +71,25 @@ class ViewController: UIViewController, WKNavigationDelegate {
             for website in websites {
                 if host.contains(website) {
                     decisionHandler(.allow)
+                    
                     return
                 }
             }
+            // allows for Inital load of sites and provides alert for invalid navigation attempts.
+            validNavigationAttempt(allowedUrl: false)
         }
         decisionHandler(.cancel)
     }
+     
+    func validNavigationAttempt(allowedUrl: Bool){
+        if allowedUrl {
+            return
+        } else {
+            let ac = UIAlertController(title: "Navigation not available", message: "You are attempting to access a url outside the intent of this application.", preferredStyle: .alert )
+            ac.addAction(UIAlertAction(title: "Ok", style: .default))
+            present(ac, animated: true)
+        }
+    }
+   
 }
 
