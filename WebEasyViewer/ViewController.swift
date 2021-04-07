@@ -21,16 +21,25 @@ class ViewController: UIViewController, WKNavigationDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Open", style: .plain, target: self, action: #selector(openTapped))
         
+        let backButton = UIButton(type: .custom)
+        backButton.setTitle("<", for: .normal)
+        backButton.setTitleColor(backButton.tintColor, for: .normal)
+        
+        let forwardButton = UIButton(type: .custom)
+        forwardButton.setTitle(">", for: .normal)
+        forwardButton.setTitleColor(forwardButton.tintColor, for: .normal)
+
         let spacer = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         progressView = UIProgressView(progressViewStyle: .default)
         progressView.sizeToFit()
         let progressButton = UIBarButtonItem(customView: progressView)
         let refresh = UIBarButtonItem(barButtonSystemItem: .refresh, target: webView, action: #selector(webView.reload))
+        let back = UIBarButtonItem(customView: backButton)
+        let forward = UIBarButtonItem(customView: forwardButton)
         
-        toolbarItems = [progressButton, spacer, refresh]
+        toolbarItems = [progressButton, spacer, back, forward, spacer, refresh]
         navigationController?.isToolbarHidden = false
         
         let url = URL(string: "https://\(websites[0])")!
