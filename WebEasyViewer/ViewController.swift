@@ -22,17 +22,24 @@ class ViewController: UIViewController, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Open", style: .plain, target: self, action: #selector(openTapped))
+        // create a < and > image
+        let config = UIImage.SymbolConfiguration(pointSize: 25.0, weight: .medium, scale: .medium)
+        let imageBack = UIImage(systemName: "chevron.left", withConfiguration: config)
+        let imageForward = UIImage(systemName: "chevron.right", withConfiguration: config)
         
         let backButton = UIButton(type: .custom)
+        backButton.setImage(imageBack, for: .normal)
         //backButton.setImage(UIImage(named: "BackButton.png"), for: .normal)
-        backButton.setTitle("<", for: .normal)
+        //backButton.setTitle("<", for: .normal)
         backButton.setTitleColor(backButton.tintColor, for: .normal)
         backButton.addTarget(self, action: #selector(self.backAction(_:)), for: .touchUpInside)
         
         let forwardButton = UIButton(type: .custom)
-        forwardButton.setTitle(">", for: .normal)
+        forwardButton.setImage(imageForward, for: .normal)
+        //forwardButton.setTitle(">", for: .normal)
         forwardButton.setTitleColor(forwardButton.tintColor, for: .normal)
         forwardButton.addTarget(self, action: #selector(self.forwardAction(_:)), for: .touchUpInside)
+        
         let spacer = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         progressView = UIProgressView(progressViewStyle: .default)
         progressView.sizeToFit()
@@ -41,7 +48,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
         let back = UIBarButtonItem(customView: backButton)
         let forward = UIBarButtonItem(customView: forwardButton)
         
-        toolbarItems = [progressButton, spacer, back, forward, spacer, refresh]
+        toolbarItems = [progressButton, spacer, back, spacer, forward, spacer, refresh]
         navigationController?.isToolbarHidden = false
         
         let url = URL(string: "https://\(websites[0])")!
