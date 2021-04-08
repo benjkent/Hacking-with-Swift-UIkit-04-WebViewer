@@ -22,21 +22,18 @@ class ViewController: UIViewController, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Open", style: .plain, target: self, action: #selector(openTapped))
-        // create a < and > image
+        // Navigation buttons
         let config = UIImage.SymbolConfiguration(pointSize: 25.0, weight: .medium, scale: .medium)
         let imageBack = UIImage(systemName: "chevron.left", withConfiguration: config)
         let imageForward = UIImage(systemName: "chevron.right", withConfiguration: config)
         
         let backButton = UIButton(type: .custom)
         backButton.setImage(imageBack, for: .normal)
-        //backButton.setImage(UIImage(named: "BackButton.png"), for: .normal)
-        //backButton.setTitle("<", for: .normal)
         backButton.setTitleColor(backButton.tintColor, for: .normal)
         backButton.addTarget(self, action: #selector(self.backAction(_:)), for: .touchUpInside)
         
         let forwardButton = UIButton(type: .custom)
         forwardButton.setImage(imageForward, for: .normal)
-        //forwardButton.setTitle(">", for: .normal)
         forwardButton.setTitleColor(forwardButton.tintColor, for: .normal)
         forwardButton.addTarget(self, action: #selector(self.forwardAction(_:)), for: .touchUpInside)
         
@@ -56,17 +53,14 @@ class ViewController: UIViewController, WKNavigationDelegate {
         webView.allowsBackForwardNavigationGestures = true
         webView.addObserver(self, forKeyPath: #keyPath(WKWebView.estimatedProgress), options: .new, context: nil)
     }
-    
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if keyPath == "estimatedProgress" {
             progressView.progress = Float(webView.estimatedProgress)
         }
     }
-    
     @objc func openTapped() {
         let ac = UIAlertController(title: "Open page...", message: nil, preferredStyle: .actionSheet)
-        //ac.addAction(UIAlertAction(title: "apple.com", style: .default, handler: openPage))
-        //ac.addAction(UIAlertAction(title: "time.gov", style: .default, handler: openPage))
+        
         for website in websites {
             ac.addAction(UIAlertAction(title: website, style: .default, handler: openPage))
         }
@@ -77,7 +71,6 @@ class ViewController: UIViewController, WKNavigationDelegate {
     func openPage(action: UIAlertAction){
         let url = URL(string: "https://" + action.title!)!
         webView.load(URLRequest(url: url))
-        
     }
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         title = webView.title
@@ -90,7 +83,6 @@ class ViewController: UIViewController, WKNavigationDelegate {
             for website in websites {
                 if host.contains(website) {
                     decisionHandler(.allow)
-                    
                     return
                 }
             }
@@ -111,11 +103,9 @@ class ViewController: UIViewController, WKNavigationDelegate {
     }
     @IBAction func backAction(_ sender: UIButton) {
         webView.goBack()
-
     }
     @IBAction func forwardAction(_ sender: UIButton){
         webView.goForward()
-       
     }
 }
 
