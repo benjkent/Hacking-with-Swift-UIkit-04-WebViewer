@@ -24,13 +24,15 @@ class ViewController: UIViewController, WKNavigationDelegate {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Open", style: .plain, target: self, action: #selector(openTapped))
         
         let backButton = UIButton(type: .custom)
+        //backButton.setImage(UIImage(named: "BackButton.png"), for: .normal)
         backButton.setTitle("<", for: .normal)
         backButton.setTitleColor(backButton.tintColor, for: .normal)
+        backButton.addTarget(self, action: #selector(self.backAction(_:)), for: .touchUpInside)
         
         let forwardButton = UIButton(type: .custom)
         forwardButton.setTitle(">", for: .normal)
         forwardButton.setTitleColor(forwardButton.tintColor, for: .normal)
-
+        forwardButton.addTarget(self, action: #selector(self.forwardAction(_:)), for: .touchUpInside)
         let spacer = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         progressView = UIProgressView(progressViewStyle: .default)
         progressView.sizeToFit()
@@ -99,6 +101,17 @@ class ViewController: UIViewController, WKNavigationDelegate {
             present(ac, animated: true)
         }
     }
-   
+    @IBAction func backAction(_ sender: UIButton) {
+        //let _ = self.navigationController?.popViewController(animated: true)
+        let ac = UIAlertController(title: "You touched the back button", message: "we're going back", preferredStyle: .alert )
+        ac.addAction(UIAlertAction(title: "Ok", style: .default))
+        present(ac, animated: true)
+        
+    }
+    @IBAction func forwardAction(_ sender: UIButton){
+        let ac = UIAlertController(title: "You touched the forward button", message: "we're going forward", preferredStyle: .alert )
+        ac.addAction(UIAlertAction(title: "Ok", style: .default))
+        present(ac, animated: true)
+    }
 }
 
