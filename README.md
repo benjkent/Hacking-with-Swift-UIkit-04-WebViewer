@@ -38,7 +38,7 @@
 | <img src="https://github.com/benjkent/Hacking-with-Swift-UIkit-04-WebViewer/blob/main/screenshots/initalView.png">  | <img src="https://github.com/benjkent/Hacking-with-Swift-UIkit-04-WebViewer/blob/main/screenshots/openPage.png" >  |  <img src="https://github.com/benjkent/Hacking-with-Swift-UIkit-04-WebViewer/blob/main/screenshots/newSite.png"> |
 | ViewController | ViewController | ViewController |
 | Nav not allowed | Back & forward |   |
-| <img src=" "> | <img src=" " |   | 
+| <img src="https://github.com/benjkent/Hacking-with-Swift-UIkit-04-WebViewer/blob/main/screenshots/navigationAlertError.png"> | <img src=" " |   | 
 
 
 
