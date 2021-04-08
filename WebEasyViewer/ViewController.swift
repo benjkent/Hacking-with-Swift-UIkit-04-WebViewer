@@ -77,6 +77,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
     func openPage(action: UIAlertAction){
         let url = URL(string: "https://" + action.title!)!
         webView.load(URLRequest(url: url))
+        
     }
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         title = webView.title
@@ -109,18 +110,12 @@ class ViewController: UIViewController, WKNavigationDelegate {
         }
     }
     @IBAction func backAction(_ sender: UIButton) {
-        //let _ = self.navigationController?.popViewController(animated: true)
-        let ac = UIAlertController(title: "You touched the back button", message: "we're going back", preferredStyle: .alert )
-        ac.addAction(UIAlertAction(title: "Ok", style: .default))
-        present(ac, animated: true)
-        // theses don't really do any thing yet
-        
+        webView.goBack()
+
     }
     @IBAction func forwardAction(_ sender: UIButton){
-        let ac = UIAlertController(title: "You touched the forward button", message: "we're going forward", preferredStyle: .alert )
-        ac.addAction(UIAlertAction(title: "Ok", style: .default))
-        present(ac, animated: true)
-        // theses don't really do any thing yet
+        webView.goForward()
+       
     }
 }
 
