@@ -106,12 +106,14 @@ class ViewController: UIViewController, WKNavigationDelegate {
         let ac = UIAlertController(title: "You touched the back button", message: "we're going back", preferredStyle: .alert )
         ac.addAction(UIAlertAction(title: "Ok", style: .default))
         present(ac, animated: true)
+        // theses don't really do any thing yet
         
     }
     @IBAction func forwardAction(_ sender: UIButton){
         let ac = UIAlertController(title: "You touched the forward button", message: "we're going forward", preferredStyle: .alert )
         ac.addAction(UIAlertAction(title: "Ok", style: .default))
         present(ac, animated: true)
+        // theses don't really do any thing yet
     }
 }
 
