@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		746A56CB261FBCEE00FBA0AB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746A56CA261FBCEE00FBA0AB /* TableViewController.swift */; };
 		746A56CE261FCFF400FBA0AB /* Websites.txt in Resources */ = {isa = PBXBuildFile; fileRef = 746A56CD261FCFF400FBA0AB /* Websites.txt */; };
+		746A56D6261FEABE00FBA0AB /* listofsites.png in Resources */ = {isa = PBXBuildFile; fileRef = 746A56D5261FEABE00FBA0AB /* listofsites.png */; };
+		746A56D9261FEADB00FBA0AB /* viewlistofsites.png in Resources */ = {isa = PBXBuildFile; fileRef = 746A56D8261FEADB00FBA0AB /* viewlistofsites.png */; };
 		747A362F261D282700023BEB /* openPage.png in Resources */ = {isa = PBXBuildFile; fileRef = 747A362C261D282700023BEB /* openPage.png */; };
 		747A3630261D282700023BEB /* initalView.png in Resources */ = {isa = PBXBuildFile; fileRef = 747A362D261D282700023BEB /* initalView.png */; };
 		747A3631261D282700023BEB /* newSite.png in Resources */ = {isa = PBXBuildFile; fileRef = 747A362E261D282700023BEB /* newSite.png */; };
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		746A56CA261FBCEE00FBA0AB /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		746A56CD261FCFF400FBA0AB /* Websites.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Websites.txt; sourceTree = "<group>"; };
+		746A56D5261FEABE00FBA0AB /* listofsites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = listofsites.png; sourceTree = "<group>"; };
+		746A56D8261FEADB00FBA0AB /* viewlistofsites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = viewlistofsites.png; sourceTree = "<group>"; };
 		747A362C261D282700023BEB /* openPage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = openPage.png; sourceTree = "<group>"; };
 		747A362D261D282700023BEB /* initalView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = initalView.png; sourceTree = "<group>"; };
 		747A362E261D282700023BEB /* newSite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newSite.png; sourceTree = "<group>"; };
@@ -55,6 +59,8 @@
 		747A362B261D27E400023BEB /* screenshots */ = {
 			isa = PBXGroup;
 			children = (
+				746A56D8261FEADB00FBA0AB /* viewlistofsites.png */,
+				746A56D5261FEABE00FBA0AB /* listofsites.png */,
 				747A3633261E928E00023BEB /* navigationButtons.png */,
 				747A3634261E928E00023BEB /* navigationAlertError.png */,
 				747A362D261D282700023BEB /* initalView.png */,
@@ -158,12 +164,14 @@
 				747ABB3026192A400013F4E5 /* LaunchScreen.storyboard in Resources */,
 				747A3630261D282700023BEB /* initalView.png in Resources */,
 				747ABB2D26192A400013F4E5 /* Assets.xcassets in Resources */,
+				746A56D6261FEABE00FBA0AB /* listofsites.png in Resources */,
 				747A362F261D282700023BEB /* openPage.png in Resources */,
 				746A56CE261FCFF400FBA0AB /* Websites.txt in Resources */,
 				747A3635261E928E00023BEB /* navigationButtons.png in Resources */,
 				747ABB2B26192A400013F4E5 /* Main.storyboard in Resources */,
 				747A3631261D282700023BEB /* newSite.png in Resources */,
 				747A3636261E928E00023BEB /* navigationAlertError.png in Resources */,
+				746A56D9261FEADB00FBA0AB /* viewlistofsites.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
