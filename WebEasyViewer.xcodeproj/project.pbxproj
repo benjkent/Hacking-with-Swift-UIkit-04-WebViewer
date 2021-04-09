@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		746A56CB261FBCEE00FBA0AB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746A56CA261FBCEE00FBA0AB /* TableViewController.swift */; };
+		746A56CE261FCFF400FBA0AB /* Websites.txt in Resources */ = {isa = PBXBuildFile; fileRef = 746A56CD261FCFF400FBA0AB /* Websites.txt */; };
 		747A362F261D282700023BEB /* openPage.png in Resources */ = {isa = PBXBuildFile; fileRef = 747A362C261D282700023BEB /* openPage.png */; };
 		747A3630261D282700023BEB /* initalView.png in Resources */ = {isa = PBXBuildFile; fileRef = 747A362D261D282700023BEB /* initalView.png */; };
 		747A3631261D282700023BEB /* newSite.png in Resources */ = {isa = PBXBuildFile; fileRef = 747A362E261D282700023BEB /* newSite.png */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		746A56CA261FBCEE00FBA0AB /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		746A56CD261FCFF400FBA0AB /* Websites.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Websites.txt; sourceTree = "<group>"; };
 		747A362C261D282700023BEB /* openPage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = openPage.png; sourceTree = "<group>"; };
 		747A362D261D282700023BEB /* initalView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = initalView.png; sourceTree = "<group>"; };
 		747A362E261D282700023BEB /* newSite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newSite.png; sourceTree = "<group>"; };
@@ -88,6 +92,8 @@
 				747ABB2C26192A400013F4E5 /* Assets.xcassets */,
 				747ABB2E26192A400013F4E5 /* LaunchScreen.storyboard */,
 				747ABB3126192A410013F4E5 /* Info.plist */,
+				746A56CA261FBCEE00FBA0AB /* TableViewController.swift */,
+				746A56CD261FCFF400FBA0AB /* Websites.txt */,
 			);
 			path = WebEasyViewer;
 			sourceTree = "<group>";
@@ -153,6 +159,7 @@
 				747A3630261D282700023BEB /* initalView.png in Resources */,
 				747ABB2D26192A400013F4E5 /* Assets.xcassets in Resources */,
 				747A362F261D282700023BEB /* openPage.png in Resources */,
+				746A56CE261FCFF400FBA0AB /* Websites.txt in Resources */,
 				747A3635261E928E00023BEB /* navigationButtons.png in Resources */,
 				747ABB2B26192A400013F4E5 /* Main.storyboard in Resources */,
 				747A3631261D282700023BEB /* newSite.png in Resources */,
@@ -170,6 +177,7 @@
 				747ABB2826192A400013F4E5 /* ViewController.swift in Sources */,
 				747ABB2426192A400013F4E5 /* AppDelegate.swift in Sources */,
 				747ABB2626192A400013F4E5 /* SceneDelegate.swift in Sources */,
+				746A56CB261FBCEE00FBA0AB /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

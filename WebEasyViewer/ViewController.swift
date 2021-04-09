@@ -12,11 +12,14 @@ class ViewController: UIViewController, WKNavigationDelegate {
 
     var webView: WKWebView!
     var progressView: UIProgressView!
-    var websites = ["apple.com", "hackingwithswift.com", "time.gov"]
+    var websites = [String]()
+    
     override func loadView() {
         webView = WKWebView()
         webView.navigationDelegate = self
         view = webView
+        // Get sites from file
+        fetchWebsites()
     }
     
     override func viewDidLoad() {
@@ -64,6 +67,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
         for website in websites {
             ac.addAction(UIAlertAction(title: website, style: .default, handler: openPage))
         }
+        ac.addAction(UIAlertAction(title: "View Complete List", style: .default, handler: viewSiteList))
         ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
         ac.popoverPresentationController?.barButtonItem = self.navigationItem.rightBarButtonItem
         present(ac, animated: true)
@@ -71,6 +75,12 @@ class ViewController: UIViewController, WKNavigationDelegate {
     func openPage(action: UIAlertAction){
         let url = URL(string: "https://" + action.title!)!
         webView.load(URLRequest(url: url))
+    }
+    func viewSiteList(action: UIAlertAction){
+        if let vc = storyboard?.instantiateViewController(identifier: "List") as? TableViewController {
+            vc.sites = websites
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         title = webView.title
@@ -106,6 +116,16 @@ class ViewController: UIViewController, WKNavigationDelegate {
     }
     @IBAction func forwardAction(_ sender: UIButton){
         webView.goForward()
+    }
+    func fetchWebsites(){
+        if let webSitesFile = Bundle.main.url(forResource: "Websites", withExtension: "txt"){
+            if let sitesContent = try? String(contentsOf: webSitesFile) {
+                let sites = sitesContent.components(separatedBy: "\n")
+                for name in sites where name != "" {
+                    websites.append(name)
+                }
+            }
+        }
     }
 }
 
