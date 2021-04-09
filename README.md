@@ -38,7 +38,7 @@
 | <img src="https://github.com/benjkent/Hacking-with-Swift-UIkit-04-WebViewer/blob/main/screenshots/initalView.png">  | <img src="https://github.com/benjkent/Hacking-with-Swift-UIkit-04-WebViewer/blob/main/screenshots/openPage.png" >  |  <img src="https://github.com/benjkent/Hacking-with-Swift-UIkit-04-WebViewer/blob/main/screenshots/newSite.png"> |
 | ViewController | ViewController | ViewController |
 | Nav not allowed | Back & forward |  View list of sites |
-| <img src="https://github.com/benjkent/Hacking-with-Swift-UIkit-04-WebViewer/blob/main/screenshots/navigationAlertError.png"> | <img src="https://github.com/benjkent/Hacking-with-Swift-UIkit-04-WebViewer/blob/main/screenshots/navigationButtons.png"> | <img src=" ">  | 
+| <img src="https://github.com/benjkent/Hacking-with-Swift-UIkit-04-WebViewer/blob/main/screenshots/navigationAlertError.png"> | <img src="https://github.com/benjkent/Hacking-with-Swift-UIkit-04-WebViewer/blob/main/screenshots/navigationButtons.png"> | <img src="https://github.com/benjkent/Hacking-with-Swift-UIkit-04-WebViewer/blob/main/screenshots/viewlistofsites.png">  | 
 | TableView |  |  | 
 | List of sites |  |  |
 | <img src="https://github.com/benjkent/Hacking-with-Swift-UIkit-04-WebViewer/blob/main/screenshots/listofsites.png"> |  |  | 
