@@ -15,7 +15,7 @@
 * Add padding to top of WebView to allow for viewing top of web page
 ## Credit
 * Hackingwithswift https://www.hackingwithswift.com/read/4/1/settinng-up
-
+* Clean-swift https://clean-swift.com/how-to-slim-down-your-viewdidload-method/
 # Swift topics covered in this project
 1. Apple's web widget: WKWebView
 2. UIToolbar: a toolbar component that holds UIBarButtonItems
