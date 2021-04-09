@@ -41,7 +41,7 @@
 | <img src="https://github.com/benjkent/Hacking-with-Swift-UIkit-04-WebViewer/blob/main/screenshots/navigationAlertError.png"> | <img src="https://github.com/benjkent/Hacking-with-Swift-UIkit-04-WebViewer/blob/main/screenshots/navigationButtons.png"> | <img src=" ">  | 
 | TableView |  |  | 
 | List of sites |  |  |
-| <img src=" "> |  |  | 
+| <img src="https://github.com/benjkent/Hacking-with-Swift-UIkit-04-WebViewer/blob/main/screenshots/listofsites.png"> |  |  | 
 
 
 
